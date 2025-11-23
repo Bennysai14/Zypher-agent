@@ -1,13 +1,24 @@
-# Zypher Job Tailor Pro
+# Zypher Agent - Local Job Tailor
 
-Advanced AI agent built with Zypher + Deno.
-Tailors resumes and cover letters from a job description.
+A simple local AI agent built in Node.js/TypeScript to analyze job descriptions and provide tailored skills, summary, and cover letter recommendations. This project runs entirely locally—no external API required.
 
-## Run locally
+## Features
 
-1. Install Deno: https://deno.land  
-2. Set your OpenAI API key:
-   - Windows: `OPENAI_API_KEY`
-3. Run agent:
-   ```bash
-   deno run --allow-env --allow-net main.ts
+- Load job descriptions from terminal input or `sample-jd.txt`
+- Generate skills, technologies, a summary, and a cover letter
+- Save results locally to `results.json`
+- Fully offline, mock AI agent for demonstration
+
+## Files
+
+- `main.ts` - Main agent code
+- `sample-jd.txt` - Sample job description
+- `results.json` - Generated output after running the agent
+
+## How to Run
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Bennysai14/Zypher-agent.git
+cd Zypher-agent
